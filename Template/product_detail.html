@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details | CodeVerse Shop</title>
+</head>
+<body style="margin:0; padding:0; font-family:Segoe UI, sans-serif; background-color:#f4f4f4; color:#333;">
+
+  <header style="background:#4a90e2; color:white; text-align:center; padding:2rem 1rem;">
+    <h1 style="margin:0;">🛍️ CodeVerse Shop</h1>
+    <p style="margin-top:0.5rem;">Explore individual product details</p>
+  </header>
+
+  <nav style="background:white; padding:1rem; display:flex; justify-content:center; gap:2rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+    <a href="/" style="text-decoration:none; color:#4a90e2; font-weight:bold;">🏠 Home</a>
+    <a href="/product" style="text-decoration:none; color:#4a90e2; font-weight:bold;">🧩 Products</a>
+    <a href="/about" style="text-decoration:none; color:#4a90e2; font-weight:bold;">📘 About</a>
+    <a href="/contact" style="text-decoration:none; color:#4a90e2; font-weight:bold;">📞 Contact</a>
+  </nav>
+
+  <main style="max-width:900px; margin:2rem auto; background:white; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.05); padding:2rem; display:flex; gap:2rem; flex-wrap:wrap;">
+
+    <div style="flex:1 1 300px; display:flex; justify-content:center;">
+      <img src={{%image%}} alt="Fjallraven Backpack" style="max-width:100%; max-height:400px; object-fit:contain; border-radius:6px;" />
+    </div>
+
+    <div style="flex:1 1 300px;">
+      <h2 style="color:#333; font-size:1.8rem;">{{%title%}}</h2>
+      <p style="margin:1rem 0; font-size:1rem; line-height:1.6;">
+        {{%description%}}
+      </p>
+      <p style="font-size:1rem; color:#777;"><strong>Category:</strong> {{%category%}}</p>
+      <div style="font-size:1.5rem; margin:1rem 0; color:#4a90e2;"><strong>${{%price%}}</strong></div>
+      <button style="padding:10px 20px; background-color:#4a90e2; color:white; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Add to Cart</button>
+    </div>
+
+  </main>
+
+  <footer style="background:#222; color:#bbb; text-align:center; padding:1rem; font-size:0.9rem;">
+    <p>&copy; 2025 CodeVerse. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
