@@ -1,0 +1,47 @@
+Build a Desktop App for Employee Screen Monitoring with Real-Time Admin Web Dashboard
+Posted 48 minutes ago
+Worldwide
+
+Summary
+We are looking to hire a skilled developer to create a complete Employee Screen Monitoring System, consisting of:
+
+A native desktop application (installable on employee PCs), and
+
+An admin dashboard web app to monitor screens in real-time.
+
+👨‍💻 Employee Side (Desktop App):
+A native desktop app (Windows preferred, cross-platform is a plus)
+
+Simple login form with ID and Password
+
+After login, the app should automatically start sharing the full screen to the admin dashboard
+
+No manual permission popup each time — it should start immediately after login (since it’s a native app)
+
+Continuous screen sharing (unlimited duration) until logout or app closed
+
+Optionally auto-start on system boot
+
+🧑‍💼 Admin Side (Web Dashboard):
+A secure web-based dashboard accessible via browser (built using Node.js + socket.io + HTML/CSS/Bootstrap)
+
+Admin can see a list of all online employees
+
+For each employee, the admin can view their screen live in real-time
+
+Layout should support multiple streams (e.g., grid view)
+
+Show basic info like employee ID, status (active/inactive), connection time
+
+Admin dashboard should update live without refreshing
+
+🔐 Security & Technical Notes:
+Secure authentication between employee app and server
+
+Efficient and optimized real-time screen streaming (WebRTC / socket.io)
+
+Server should be hostable on any standard VPS (Node.js-based)
+
+No third-party paid APIs; open-source or native implementation preferred
+
+Code must be clean, modular, and well-commented

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
-
+const events = require('events');
 // Load templates
 const home = fs.readFileSync('./template/index.html', 'utf-8');
 const about = fs.readFileSync('./template/about.html', 'utf-8');
@@ -76,6 +76,15 @@ const server = http.createServer((req, res) => {
     }
 });
 
+const eventEmitter = new events.EventEmitter();
+
+eventEmitter.on('serverStarted', (data) => {
+    console.log(data.message);
+});
+eventEmitter.on('serverStarted', (data) => {
+    console.log(`Server ID: ${data.id}`);
+});
+eventEmitter.emit('serverStarted', { message: `Server is running `,  id: 2});
 server.listen(2000, '127.0.0.1', () => {
     console.log('🚀 Server is running at http://127.0.0.1:2000');
 });
